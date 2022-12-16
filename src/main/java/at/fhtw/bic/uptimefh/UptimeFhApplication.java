@@ -1,5 +1,6 @@
 package at.fhtw.bic.uptimefh;
 
+import at.fhtw.bic.uptimefh.controller.UptimeController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
