@@ -10,12 +10,18 @@ import java.awt.*;
 @RestController
 public class ColorController {
   @GetMapping("/api/complementary")
-  public void colorChange (@RequestParam String color){
-    Container container = new Container();
-    if(color.toLowerCase().equals("red")){
-      container.setBackground(Color.RED);
-    }
+  public Color setColor (@RequestParam String color){
+    Color c = new Color (0,0,0);
+    switch (color.toLowerCase()){
+      case "red":
+        c = Color.RED;
+        break;
 
+      case "blue":
+        c = Color.BLUE;
+        break;
+    }
+   return c;
 
   }
 }
