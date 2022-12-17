@@ -1,6 +1,6 @@
 package at.fhtw.bic.uptimefh;
 
-import at.fhtw.bic.uptimefh.controller.UptimeController;
+import at.fhtw.bic.uptimefh.controller.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class UptimeFhApplication {
 
   public static void main(String[] args) {
+
     SpringApplication.run(UptimeFhApplication.class, args);
   }
 
